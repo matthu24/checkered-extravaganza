@@ -12,12 +12,26 @@
   width: 648px;
 }
 
+#test{
+  border:1px solid black;
+  width:72px;
+  height: 72px;
+}
+
 .dark-square{
   background-color: black;
 }
 
 .red-square{
   background-color: red;
+}
+
+.blue-square{
+  background-color: blue;
+}
+
+.white-square{
+  background-color: white;
 }
 
 li{

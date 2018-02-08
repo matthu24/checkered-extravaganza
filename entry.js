@@ -20,6 +20,7 @@ function setupBoard(){
     if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
       square.classList.add('dark-square')
     }
+    // random is either one or zero
   }
 }
 
@@ -33,3 +34,19 @@ board.addEventListener('click', function(e){
     e.target.classList.add('red-square')
   }
 });
+
+
+let random;
+let test = document.getElementById('test')
+setInterval(function(){
+  random = Math.floor(Math.random()*2)
+  // console.log(random)
+  if (random === 0) {
+    // test.classList.add('dark-square')
+    test.className = 'dark-square'
+  }else{
+    // test.classList.add('red-square')
+    test.className = 'red-square'
+
+  }
+},500)
