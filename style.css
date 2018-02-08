@@ -9,18 +9,22 @@
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
-  width: 540px;
+  width: 648px;
 }
 
 .dark-square{
   background-color: black;
 }
 
+.red-square{
+  background-color: red;
+}
+
 li{
   list-style: none;
   border:1px solid black;
-  height: 60px;
-  width: 60px;
+  height: 72px;
+  width: 72px;
 }
 
 li:hover{
