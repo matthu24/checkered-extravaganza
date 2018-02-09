@@ -9,7 +9,12 @@ function setupBoard(){
   let square;
   for (var i = 0; i < 64; i++) {
     square = document.createElement('li');
-    square.className = 'black-square';
+    if (i % 2 == 0 && Math.floor(i/8) % 2 === 1) {
+      square.className = 'black-square'
+    }
+    if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
+      square.className = 'black-square'
+    }
     board.append(square);
     //add a dark square every other, but we need to switch every row too
     // 0-7   Math.floor(i/8) % 2 == 0
@@ -19,10 +24,10 @@ function setupBoard(){
     // 32-39
     // 40-47
     // if (i % 2 == 0 && Math.floor(i/8) % 2 === 1) {
-    //   square.classList.add('dark-square')
+    //   square.className = 'dark-square'
     // }
     // if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
-    //   square.classList.add('dark-square')
+    //   square.className = 'dark-square'
     // }
     // random is either one or zero
   }
@@ -97,7 +102,15 @@ function blink(square){
     clearInterval(interval)
     var ul = document.getElementById("board");
     var items = ul.getElementsByTagName("li");
-    for (var i = 0; i < items.length; ++i) {
+    for (var i = 0; i < 64; ++i) {
+      // if (i % 2 == 0 && Math.floor(i/8) % 2 === 1) {
+      //   items[i].className = 'black-square'
+      // }
+      // if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
+      //   items[i].className = 'black-square'
+      // }else{
+      //   items[i].className = 'white-square';
+      // }
       // do something with items[i], which is a <li> element
       items[i].className='black-square';
     }
