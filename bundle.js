@@ -88,20 +88,6 @@ function setupBoard() {
       square.className = 'black-square';
     }
     board.append(square);
-    //add a dark square every other, but we need to switch every row too
-    // 0-7   Math.floor(i/8) % 2 == 0
-    // 8-20
-    // 16-23
-    // 24-31
-    // 32-39
-    // 40-47
-    // if (i % 2 == 0 && Math.floor(i/8) % 2 === 1) {
-    //   square.className = 'dark-square'
-    // }
-    // if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
-    //   square.className = 'dark-square'
-    // }
-    // random is either one or zero
   }
 }
 
@@ -165,15 +151,6 @@ function blink(square) {
     var ul = document.getElementById("board");
     var items = ul.getElementsByTagName("li");
     for (var i = 0; i < 64; ++i) {
-      // if (i % 2 == 0 && Math.floor(i/8) % 2 === 1) {
-      //   items[i].className = 'black-square'
-      // }
-      // if(i % 2 == 1 && Math.floor(i/8) % 2 === 0){
-      //   items[i].className = 'black-square'
-      // }else{
-      //   items[i].className = 'white-square';
-      // }
-      // do something with items[i], which is a <li> element
       items[i].className = 'black-square';
     }
   }, 20000);
@@ -190,9 +167,6 @@ function timer() {
     clearInterval(interval);
   }, 20000);
 }
-
-// let element = document.getElementById('test')
-// test(element);
 
 /***/ }),
 /* 1 */
