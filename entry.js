@@ -96,7 +96,7 @@ function blink(square){
     }else if (random === 0){
       square.className = 'blue-square'
     }
-  },700)
+  },800)
 
   setTimeout(function(){
     clearInterval(interval)

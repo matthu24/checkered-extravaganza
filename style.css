@@ -110,3 +110,7 @@ li:hover{
   /*background-color: red;*/
   cursor:pointer;
 }
+
+button{
+  margin:30px;
+}
