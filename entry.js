@@ -13,7 +13,7 @@ function setupBoard(){
     board.append(square);
     //add a dark square every other, but we need to switch every row too
     // 0-7   Math.floor(i/8) % 2 == 0
-    // 8-15
+    // 8-20
     // 16-23
     // 24-31
     // 32-39
@@ -69,7 +69,7 @@ board.addEventListener('click', function(e){
 
 
 
-//blinks for 15 seconds
+//blinks for 20 seconds
 function blink(square){
   let random;
   let interval = setInterval(function(){
@@ -101,12 +101,12 @@ function blink(square){
       // do something with items[i], which is a <li> element
       items[i].className='black-square';
     }
-  },15000)
+  },20000)
 }
 
 
 function timer(){
-  let remaining = 15;
+  let remaining = 20;
   let timer = document.getElementById('timer')
   let interval = setInterval(function(){
     remaining-=1;
@@ -114,7 +114,7 @@ function timer(){
   },1000)
   setTimeout(function(){
     clearInterval(interval);
-  },15000)
+  },20000)
 }
 
 

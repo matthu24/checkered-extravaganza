@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+body {
+   background-image: url("https://s3.us-east-2.amazonaws.com/personalwebsite1/Screen+Shot+2018-02-08+at+9.25.13+PM.png");
+   /*background-color: #cccccc;*/
+   color:white;
+}
+
 #board{
   display:flex;
   flex-direction: row;
