@@ -18,8 +18,12 @@
   height: 72px;
 }
 
-.dark-square{
-  background-color: black;
+.purple-square{
+  background-color: purple;
+}
+
+.yellow-square{
+  background-color: yellow;
 }
 
 .red-square{
@@ -34,6 +38,17 @@
   background-color: white;
 }
 
+.green-square{
+  background-color: orange;
+}
+.black-square{
+  background-color: black;
+}
+
+.bold{
+  background-color: white;
+}
+
 li{
   list-style: none;
   border:1px solid black;
@@ -42,6 +57,6 @@ li{
 }
 
 li:hover{
-  background-color: red;
+  /*background-color: red;*/
   cursor:pointer;
 }
