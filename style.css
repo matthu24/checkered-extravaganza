@@ -84,13 +84,20 @@ body{
   background-color: blue;
 }
 
+
+
 .white-square{
   background-color: white;
 }
 
 .green-square{
+  background-color: lightgreen;
+}
+
+.orange-square{
   background-color: orange;
 }
+
 .black-square{
   background-color: black;
 }

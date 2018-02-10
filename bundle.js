@@ -129,8 +129,10 @@ function blink(square) {
   let interval = setInterval(function () {
     random = Math.floor(Math.random() * 17);
     // console.log(random)
-    if (random > 4) {
+    if (random > 5) {
       square.className = 'black-square';
+    } else if (random === 5) {
+      square.className = 'orange-square';
     } else if (random === 4) {
       square.className = 'yellow-square';
     } else if (random === 3) {
