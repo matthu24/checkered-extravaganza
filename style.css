@@ -80,6 +80,10 @@ body{
   background-color: red;
 }
 
+.orange-square{
+  background-color: orange;
+}
+
 .blue-square{
   background-color: blue;
 }
@@ -89,7 +93,7 @@ body{
 }
 
 .green-square{
-  background-color: orange;
+  background-color: lightgreen;
 }
 .black-square{
   background-color: black;
